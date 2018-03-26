@@ -1,26 +1,45 @@
+addEventListener('keydown', function(event) {
+    let key = e.which;
+});
 
-
-var $div = $('#carOne');
+let $carOneMove = $('#carOne');
 $(document).keydown(function(e) {
      switch (e.which) {
         case 37:
-              $div.css('left', $div.offset().left - 10);
+              $carOneMove.css('left', $carOneMove.offset().left - 10);
               break;
         case 38:
-              $div.css('top', $div.offset().top - 10);
+              $carOneMove.css('top', $carOneMove.offset().top - 10);
               break;
         case 39:
-              $div.css('left', $div.offset().left + 10);
+              $carOneMove.css('left', $carOneMove.offset().left + 10);
               break;
         case 40:
-              $div.css('top', $div.offset().top + 10);
+              $carOneMove.css('top', $carOneMove.offset().top + 10);
+              break;
+       }
+  })
+let $carTwoMove = $('#carTwo');
+$(document).keydown(function(e) {
+     switch (e.which) {
+        case 83:
+              $carTwoMove.css('left', $carTwoMove.offset().left - 10);
+              break;
+        case 69:
+              $carTwoMove.css('top', $carTwoMove.offset().top - 10);
+              break;
+        case 70:
+              $carTwoMove.css('left', $carTwoMove.offset().left + 10);
+              break;
+        case 68:
+              $carTwoMove.css('top', $carTwoMove.offset().top + 10);
               break;
        }
   })
 
-addEventListener('keydown', function(event) {
-    var key = event.key;
-});
+
+
+/*
 
 switch (e.key) {
     case "ArrowLeft":
@@ -31,7 +50,7 @@ switch (e.key) {
         break;
     case "ArrowDown":
         break;
-}
+}*/
 
 
 // /// character movement update

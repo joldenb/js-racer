@@ -1,34 +1,4 @@
-/// store key codes and currently pressed ones
-//var keys = {};
-//    keys.LEFT = 37;
-//    keys.RIGHT = 39;
 
-/// store reference to character's position and element
-var character = {
-  x: 100,
-  y: 100,
-  element: document.getElementById("character")
-};
-
-
-
-// /// key detection (better to use addEventListener, but this will do)
-// document.body.onkeyup =
-// document.onkeydown = function (e) {
-//     switch (e.key) {
-//         case 'ArrowUp':
-//             // up arrow
-//             break;
-//         case 'ArrowDown':
-//             // down arrow
-//             break;
-//         case 'ArrowLeft':
-//             // left arrow
-//             break;
-//         case 'ArrowRight':
-//             // right arrow
-//     }
-// };
 
 var $div = $('#carOne');
 $(document).keydown(function(e) {
@@ -49,24 +19,43 @@ $(document).keydown(function(e) {
   })
 
 addEventListener('keydown', function(event) {
-
-    var key = event.key; // "ArrowRight", "ArrowLeft", "ArrowUp", or "ArrowDown"
+    var key = event.key;
 });
 
 switch (e.key) {
     case "ArrowLeft":
-        // Left pressed
         break;
     case "ArrowRight":
-        // Right pressed
         break;
     case "ArrowUp":
-        // Up pressed
         break;
     case "ArrowDown":
-        // Down pressed
         break;
 }
+
+
+// /// character movement update
+// var moveCharacter = function(dx, dy){
+//   character.x += dx||0;
+//   character.y += dy||0;
+//   character.element.style.left = character.x + 'px';
+//   character.element.style.top = character.y + 'px';
+// };
+
+// /// character control
+// var detectCharacterMovement = function(){
+//   if (keydown('ArrowLeft') ) {
+//     moveCharacter(-1);
+//   }
+//   if ( keys[keys.RIGHT] ) {
+//     moveCharacter(1);
+//   }
+// };
+
+// /// game loop
+// setInterval(function(){
+//   detectCharacterMovement();
+// }, 1000/24);
 
 /*
 var pane = $('#pane'),

@@ -14,42 +14,24 @@
   width: 50px;
   position: absolute; bottom:450px; left: 300px;
 }
-
 #carTwo {
   height: 50px;
   width: 50px;
   position: absolute; bottom:350px; left: 600px;
 }
+
 /*
-@include anim($animName:walk, $steps:5, $animNbr:4, $animParams:.5s infinite);
 
-.walk { animation: carOne steps(5) 0.5s infinite; }
+.go { animation: carOne steps(5) 0.5s infinite; }
 
-@keyframes walk { from {left: 750px; top: 550px;}
+@keyframes go { from {left: 750px; top: 550px;}
   to {left: 50px; top: 350px;} }
 
-
-@keyframes example {
-    0%   {left: 750px; top: 550px;}
-    100% {left: 750px; top: 350px;}
-}
-
-.move-me {
-  display: inline-block;
-  padding: 20px;
-  color: white;
-  position: relative;
-  margin: 0 0 10px 0;
-}
-.move-me-1 {
-  animation: move-in-steps 8s steps(9) infinite;
-}
-.move-me-3 {
-  animation: move-in-steps 8s infinite;
+go 8s infinite;
 }
 
 
-@keyframes move-in-steps {
+@keyframes go {
   0% {
     left: 0;
     background: blue;
@@ -75,12 +57,11 @@ div {
     height: 50px;
     position: relative;
     background-color: red;
-    animation-name: walk;
+    animation-name: go;
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
 
-/*
 
 
 
@@ -118,3 +99,4 @@ div {
   animation-iteration-count: infinite;
 }
 
+*/

@@ -12,12 +12,12 @@
 #carOne {
   height: 50px;
   width: 50px;
-  position: absolute; bottom:450px; left: 300px;
+  position: absolute; bottom:370px; left: 300px;
 }
 #carTwo {
   height: 50px;
   width: 50px;
-  position: absolute; bottom:350px; left: 600px;
+  position: absolute; bottom:350px; left: 300px;
 }
 
 /*

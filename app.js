@@ -36,8 +36,31 @@ $(document).keydown(function(e) {
               break;
        }
   })
+//addEventListener('keydown', function(event) {
+//    let key = e.which;
+let carPosition = 0;
 
 
+if ("carTwo" == 900)
+  {
+    alert("Car One is the winner!");
+    carPosition();
+  }
+  else if ("carOne" == 900)
+  {
+    alert("Car Two is the winner!");
+    carPosition();
+  }
+  function carPosition(){
+  clearInterval();
+  }
+}
+
+
+
+//  if($carOneMove.offset()(.left, > 550) {
+//    return alert("greencarwins");
+//  )}
 
 /*
 

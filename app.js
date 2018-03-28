@@ -1,3 +1,12 @@
+/* JOES COMMENTS
+
+Nice work doody! Your code is nice and concise, which is always a good goal. 
+You could add some more comments above each section describing
+what it does. 
+
+*/
+
+
 
 let car1 = document.getElementById("carOne");
 let car2 = document.getElementById("carTwo");
